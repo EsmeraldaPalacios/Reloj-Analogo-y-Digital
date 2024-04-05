@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Alagard';
+    src: url('alagard.ttf'); 
+}
+
+body {
+    overflow: hidden; 
+    background-color: #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff; 
+}
+
+.clock-container {
+    display: flex;
+    align-items: center;
+}
+
+.analog-clock {
+    width: 200px;
+    height: 200px;
+    border: 6px solid #ff33cc; 
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden; 
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    position: absolute;
+    background-color: #fff; 
+    transform-origin: center bottom; 
+    left: 50%;
+    bottom: 50%;
+}
+
+.hour-hand {
+    width: 6px;
+    height: 40%;
+    transform: translateX(-50%) rotate(90deg);
+    background-color: #fff; 
+}
+
+.minute-hand {
+    width: 4px;
+    height: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    background-color: #fff; 
+}
+
+.second-hand {
+    width: 2px;
+    height: 55%;
+    transform: translateX(-50%) rotate(90deg);
+    background-color: #fff; 
+}
+
+.digital-clock-display {
+    font-family: 'Alagard'; 
+    font-size: 36px;
+    color: #f06; 
+    background-color: #000; 
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid #f06; 
+    box-shadow: 0 0 20px #f06; 
+    margin-left: 20px;
+}
+
